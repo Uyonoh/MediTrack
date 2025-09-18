@@ -1,19 +1,19 @@
-import { productHeadings, products } from "../services/Products"
+import { salesHeadings, sales } from "../services/sales"
 
-function Inventory() {
+function TotalSalesTable({ className }: { className?: string }) {
     return (
-        <div className="col-span-8 inventory p-4 m-4">
-            <h4>Product Inventory</h4>
+        <div className={`col-span-8 sales p-4 m-4 ${className}`}>
+            {/* <h4>Product Inventory</h4> */}
             <table className="w-full text-left table-auto md:table-fixed border-separate">
                 <thead>
                     <tr>
-                        {productHeadings.map((heading) => {
+                        {salesHeadings.map((heading) => {
                             return <th className="text-base pr-4 py-2">{heading.toUpperCase()}</th>
                         })}
                     </tr>
                 </thead>
                 <tbody>
-                    {products.map((product) => {
+                    {sales.map((product) => {
                         return (
                             <tr>
                                 {product.map((data) => {
@@ -30,4 +30,4 @@ function Inventory() {
     )
 }
 
-export default Inventory;
+export default TotalSalesTable;

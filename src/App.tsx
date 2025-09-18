@@ -1,16 +1,24 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 // import './App.css'
-import Header from "./components/Header"
-import Dashboard from './pages/Dashboard'
+import Header from "./components/Header";
+import SideBar from './components/SideBar';
+import Dashboard from './pages/Dashboard';
+import SalesAnalytics from './pages/SalesAnalytics';
 
 function App() {
 
   return (
     <main>
       <Header />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-      </Routes>
+      <div className="overview grid grid-cols-10 gap-1">
+        <SideBar />
+        <div className="col-span-8">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/sales" element={<SalesAnalytics />} />
+          </Routes>
+        </div>
+      </div>
     </main>
   )
 }
