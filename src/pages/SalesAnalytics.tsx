@@ -20,7 +20,7 @@ function SalesAnalytics() {
                 </div>
                 </div>
             <section className="">
-                <div className="border border-[#aab3ab24] rounded-lg flex flex-col p-5">
+                <div className="border border-[#00000024] rounded-lg flex flex-col p-5">
                     <div className="flex flex-col flex-1">
                         <span className="font-bold text-lg">Total Sales</span>
                         <span className="font-bold text-4xl">$25,450</span>
@@ -37,11 +37,11 @@ function SalesAnalytics() {
             </section>
 
             <section className="grid sm:grid-cols-3 gap-4 p-5">
-                <div className="border border-[#aab3ab24] rounded-sm h-70 flex flex-col gap-3 p-5">
+                <div className="border border-[#00000024] rounded-sm h-70 flex flex-col gap-3 p-5">
                     <h2 className="pb-2 font-bold">Sales by Category</h2>
                     {/* Make bar chart */}
                 </div>
-                <div className="border border-[#aab3ab24] rounded-sm h-70 flex flex-col gap-3 p-5">
+                <div className="border border-[#00000024] rounded-sm h-70 flex flex-col gap-3 p-5">
                     <h2 className="pb-2 font-bold">Top Selling Products</h2>
                     <div className="flex justify-between">
                         <p>Product A</p>
@@ -59,7 +59,7 @@ function SalesAnalytics() {
             </section>
 
             <section>
-                <TotalSalesTable className="border border-[#aab3ab24] rounded-lg" />
+                <TotalSalesTable className="border border-[#00000024] rounded-lg" />
             </section>
         </div>
     );

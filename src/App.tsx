@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import SideBar from './components/SideBar';
 import Dashboard from './pages/Dashboard';
 import SalesAnalytics from './pages/SalesAnalytics';
+import Settings from './pages/Settings';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/sales" element={<SalesAnalytics />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>
       </div>

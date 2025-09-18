@@ -12,7 +12,7 @@ function SideBar() {
             <div className="nav-item flex gap-2"><Archive /><Link to="#">Inventory</Link></div>
             <div className="nav-item flex gap-2"><ChartNoAxesCombined /><Link to="/sales">Sales</Link></div>
             <div className="nav-item flex gap-2"><TriangleAlert /><Link to="#">Alerts</Link></div>
-            <div className="nav-item flex gap-2"><Settings /><Link to="#">Settings</Link></div>
+            <div className="nav-item flex gap-2"><Settings /><Link to="/settings">Settings</Link></div>
         </nav>
     )
 }

@@ -50,12 +50,9 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #4ADE80;
 }
 button:focus,
 button:focus-visible {
@@ -63,26 +60,27 @@ button:focus-visible {
 }
 
 .border-b {
-  border-bottom: 1px solid #aab3ab24;
+  border-bottom: 1px solid #00000024;
 }
 
 .border-l {
-  border-left: 1px solid #aab3ab24;
+  border-left: 1px solid #00000024;
 }
 
 .percentage {
   font-size: 14px;
 }
 
+.selected {
+  background-color: #dcfce7;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fafafa;
   }
   a:hover {
     color: #3fb46a;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
