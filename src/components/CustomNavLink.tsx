@@ -7,11 +7,13 @@ interface CustomNavLinkProps {
   label: ReactNode;
   className?: string;
   activeClassName?: string;
+  active?: boolean;
 }
 
 export function CustomNavLink({
   to,
   label,
+  active,
   className = "nav-link",
   activeClassName = "selected",
 }: CustomNavLinkProps) {
@@ -27,6 +29,10 @@ export function CustomNavLink({
     // Path is relative to page
     if (path === "") {
         pathMatch = true;
+
+        if (locHash === "" && active ) {
+            return true;
+        }
     }
 
     // console.log(`LOCHASH: ${location.hash}`);

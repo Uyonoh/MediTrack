@@ -13,6 +13,7 @@
                         <li className="">
                             <CustomNavLink to="#profile" label="Profile"
                             className="size-full block hover:bg-green-100 p-2 rounded-sm"
+                            active
                             />
                         </li>
                         <li className="">
